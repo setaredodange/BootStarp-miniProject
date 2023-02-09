@@ -1,7 +1,9 @@
 
-import './App.css';
+
 import {Container, Row, Col} from 'react-bootstrap'
 import Menus from './components/Menus/Menus'
+import RightSide  from './components/RightSide/RightSide';
+import LeftSide  from './components/LeftSide/LeftSide';
 
 function App() {
   return (
@@ -9,8 +11,10 @@ function App() {
 <Container fluid>
   <Row>
     <Menus/>
-    <Col></Col>
-    <Col></Col>
+    
+    <Col xs={12} md={6}> <LeftSide/></Col>
+    <Col  xs={12} md={6}> <RightSide/></Col>
+   
   </Row>
 </Container>
 
